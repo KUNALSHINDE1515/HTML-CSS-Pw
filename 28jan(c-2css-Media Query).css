@@ -1,0 +1,69 @@
+body{
+    background-color: red;
+}
+
+div{
+    font-size: x-large;
+    text-align: center;
+}
+
+div::after{
+    content: "Welcome to the demo";
+}
+
+
+
+
+@media(max-width:400px){
+    body{
+    background-color:white;
+} 
+div::after{
+    content:"very Small"
+}
+
+}
+
+@media (min-width:400px)and (max-width:760px){
+    body {
+        background-color: yellowgreen;
+    
+    }
+    div::after{
+        content: "mid size device";
+    }
+
+}
+
+     @media (min-width: 768px) {
+        /*
+        If viewport is atleast 900px 
+        then this style will apply
+         */
+         body {
+            background-color: rgb(222, 18, 222);
+         }
+    
+         div::after{
+            content: "Smaller sreen";
+         }
+
+        }
+
+        
+
+         @media (min-width: 900px) {
+    
+            /*
+            If viewport is atleast 900px 
+              then this style will apply
+     */
+     body {
+        background-color: aquamarine;
+     }
+
+     div::after{
+        content: "Woah its working";
+     }
+    }
+
